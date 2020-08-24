@@ -102,3 +102,53 @@ p {
     height: 50px;
     width: 50px;
 }
+
+/*         Media Queries        */
+
+
+@media screen and (max-width: 576px) 
+    { 
+        h1 
+        { 
+            font-size : 20px; 
+        } 
+
+
+        .firstDiv 
+        {
+            display: inline-block;
+            align-items: flex-start;
+        }
+
+        li 
+        {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .pictogrammes {
+            display: inline-block;
+            align-items: flex-start;
+           
+            ;
+            
+        }
+
+        .pictos {
+          
+            width: 100%;
+        }
+
+        .pictoImg {
+            height: 100px;
+            width: 100px;
+            margin-left: 25%;
+        }
+    } 
+     
+
+
+
+
+
+
