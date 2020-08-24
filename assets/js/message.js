@@ -1,0 +1,1 @@
+alert("Ce site est une reproduction d'une simple maquette. Normal si c'est pas très adapté aux formats mobiles et très grands écrans :)");

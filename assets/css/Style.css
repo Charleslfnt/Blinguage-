@@ -104,6 +104,24 @@ p {
 }
 
 /*         Media Queries        */
+@media screen and (min-width: 1500px) {
+    body {
+        background-size: 40%;
+        background-position-x: 400px;
+    }
+}
+
+
+@media screen and (min-width: 1390px) {
+    body {
+        background-size: 60%;
+        background-position-x: 400px;
+    }
+
+    .firstDiv {
+        margin-right: 200px;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .btn1resp {
