@@ -52,7 +52,7 @@ h1 {
     line-height: 1;
 }
 
-.text {
+.text, .article {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -65,7 +65,7 @@ p {
     align-content: flex-start;
 }
 
-#btn1 {
+.btn1 {
     border: 2px solid black;
     border-radius: 15px;
 	padding: 10px;
@@ -105,9 +105,58 @@ p {
 
 /*         Media Queries        */
 
+@media screen and (max-width: 900px) {
+    .btn1resp {
+        margin-left: -10px;   
+     }
+}
+	
+@media screen and (max-width: 768px) 
+{ 
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow-x: hidden;
+        width: 100%;
+        margin: auto;
+        background:url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 30px;
+        background-position-x: 190px;
+        
 
+    }
+
+    .btn1resp {
+       margin-left: -10px;   
+    }
+} 
+
+
+
+
+
+
+/*partie mobile*/
 @media screen and (max-width: 576px) 
     { 
+
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            overflow-x: hidden;
+            width: 80%;
+            margin: auto;
+            background:url("../img/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y: 50px;
+            background-position-x: 80px;
+            
+   
+        }
+
+
         h1 
         { 
             font-size : 30px; 
@@ -120,10 +169,51 @@ p {
             align-items: flex-start;
         }
 
+        .secondDiv {
+            margin-right: 25px;
+        }
+
+
         li 
         {
             display: flex;
             align-items: flex-start;
+           
+        }
+
+        .btn1 {
+            display: none;
+            width: 100px;
+            margin-left: 30%; 
+           
+            border-radius: 15px;
+            border: 10;
+            padding-left: 15%;
+            
+        }
+
+        .btn1resp {
+            width: 100px;
+            padding-left: 20%;
+            background-color: #572AE5;
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+            margin : 5px;
+            margin-left: -30%;
+            
+            
+        }
+
+        .article {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 15px;
+            
+        }
+
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 15px;
         }
 
         .pictogrammes {
